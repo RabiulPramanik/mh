@@ -1,0 +1,201 @@
+
+
+.booking-container {
+    /* font-family: 'Arial', sans-serif; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Booking Form Section */
+.booking-from-container {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+    animation: slideInLeft 0.8s ease;
+}
+
+.booking-from-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #027a0c;
+    font-family: 'Pacifico', cursive;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group, .form-group-full {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-full {
+    width: 100%;
+}
+
+.form-group label, .form-group-full label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007902;
+}
+
+.checkerror{
+    display: none;
+}
+
+.guest-btn {
+    padding: 10px 20px;
+    background-color: #8ea100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+.guest-btn:hover {
+    background-color: #005500;
+}
+.submit-btn{
+    padding: 10px 20px;
+    background-color: #005c91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: auto;
+}
+
+/* Guest Information */
+#guest-info {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Price Summary Section */
+.booking-ammount-details-container {
+    display: none;
+    font-family: 'Arial', sans-serif;
+    background: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 0.8s ease;
+}
+
+.booking-ammount-details-container h2 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 24px;
+    color: #007902;
+}
+
+.price-summary {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-summary .total {
+    font-weight: bold;
+    color: #007902;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-from-container, .booking-ammount-details-container {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group, .form-group-full {
+        width: 100%;
+    }
+}
+
+
+.modal-content {
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modalcontainer{
+    display: none;
+}
+
+
+.modal-header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+    border-top: none;
+}

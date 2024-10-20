@@ -1,0 +1,137 @@
+
+
+.profile-page-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image-container {
+    flex: 1;
+  }
+  
+  .main-profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+  }
+  
+  .profile-details {
+    flex: 3;
+    padding-left: 20px;
+  }
+  
+  
+  .username {
+    font-size: 28px;
+    background-image: linear-gradient(to right, #00ae29, #b70000); /* Define the gradient */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* Clip the background to the text for WebKit browsers */
+    color: transparent; /* Make the actual text color transparent */
+    font-weight: bold;
+  }
+  
+  .update-profile-btn {
+    padding: 10px 20px;
+    background-color: #005c8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-profile-btn:hover {
+    background-color: #004997;
+  }
+  
+  .profile-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .booking-history-container,
+  .account-info-container {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .booking-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .booking-item:last-child {
+    border-bottom: none;
+  }
+  
+  h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .save-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .profile-content {
+      flex-direction: column;
+    }
+  
+    .booking-history-container,
+    .account-info-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .profile-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-details {
+      padding-left: 0;
+    }
+  }
+  
